@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<link rel="manifest" href="/manifest.json"  crossorigin="use-credentials">
+    <script>
+	if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/serviceWorker.js')
+      .then((registration) => { 
+         // The registration was successful       
+      })
+      .catch((err) => {
+         // The registration failed
+      });
+  } 
+	</script>
+
+    </head>
+	
+	<body>
+	hi
+	</body>
+</html>
